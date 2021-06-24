@@ -1067,7 +1067,7 @@ section {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: rgb(126, 125, 125);
   margin: 0 0 0 45px;
 }
 
@@ -1133,9 +1133,9 @@ margin-bottom: 0px;}
 
 #testimonials2 .testimonial-item h3 {
   font-family: "Poppins", sans-serif;
-  color:#4E485E;}
+  /*color:#4E485E;*/}
 
-#testimonials2 .testimonial-item h4{ color: #4E485E;}
+#testimonials2 .testimonial-item h4{ color: rgb(126, 125, 125);}
 
 .testimonials .owl-nav, .testimonials .owl-dots {
   margin-top: 5px;
