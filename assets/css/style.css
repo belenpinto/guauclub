@@ -11,6 +11,7 @@
 body {
   font-family: "Poppins", sans-serif; /*Open Sans*/
   color: #332F3D;/*#444444;*/
+ 
 }
 
 a {
@@ -30,6 +31,7 @@ h3 { font-weight: 700;
   color: #69617E;
   font-family: "Passion One", sans-serif;
   font-weight: 400;
+  font-size: 36px;
 
 } /*lo modifique*/
 
@@ -90,7 +92,7 @@ h3 { font-weight: 700;
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
-  padding: 6px 0;
+  padding: 1px 0;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
@@ -111,7 +113,7 @@ h3 { font-weight: 700;
 @media (max-width: 768px) {
   #header .logo h1 {
     font-size: 28px;
-    padding: 8px 0;
+    padding: 1px 0;
   }
 }
 
@@ -359,7 +361,7 @@ h3 { font-weight: 700;
   width: 100%;
   /*background-image: url("../img/herofinal.png");*/
  background-color: #CB87B4;
-  background-image: url("../img/herohuesitos.png");
+ /* background-image: url("../img/herohuesitos.png");*/
   background-repeat: no-repeat;
   /*background-size: contain;*/
   background-size: cover;
@@ -509,7 +511,7 @@ h3 { font-weight: 700;
  
   #hero2 {
     width: 100%;
-    background-image: url("../img/fondoderesponsive.png");
+    background-image: url("../img/fondoresponsive.png");
     background-repeat: no-repeat;
     margin-top: 40px;
   }
@@ -597,7 +599,7 @@ section {
 
 .about .content h3 {
   font-weight: 400;
-  font-size: 28px; /*32px era el tamaño*/
+  font-size: 36px; /*32px era el tamaño*/
   color: #69617E;
   font-family: "Passion One", sans-serif;
   margin-bottom: 18px;
@@ -748,12 +750,12 @@ section {
 
 
 .services .icon-box2 /*pag detalle*/ {
-  padding: 30px;
+  padding: 0px 30px 60px 30px ;
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: #CCDBF5;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+ /* background: #CCDBF5;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);*/
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   text-align: center;
@@ -772,12 +774,16 @@ section {
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+ /* margin-bottom: 15px;*/
   font-size: 18px;
 }
 
 .services .title a {
   color: #332F3D;
+}
+
+.services .section-title p {
+  font-size: 18px;
 }
 
 .services .description {
@@ -830,6 +836,12 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+}
+
+.portfolio .section-title p {
+  font-size: 18px;
+  margin-left: 180px;
+  margin-right: 180px;
 }
 
 .portfolio #portfolio-flters {
@@ -952,23 +964,31 @@ section {
   opacity: 1;
   bottom: calc(50% - 50px);
 }
+@media (max-width: 992px) {
+.portfolio .section-title p {
+  font-size: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
+} 
 
 
+
+}
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.315)), url("../img/frasefondo3.jpg") center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.315)), url("../img/frasefondo3a.jpg") center center;
   background-size: cover;
   padding: 150px 0; /*tamaño de la seccion*/
 }
 
 #cta2 {
-  background: linear-gradient(rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.315)), url("../img/frasedetalle2.jpg") center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.315)), url("../img/frasedetalle2a.jpg") center center;
   background-size: cover;
   background-position: center bottom ;
-  padding: 150px 0; /*tamaño de la seccion*/
+  padding: 50px 5px 150px; /*tamaño de la seccion*/
 }
 .cta h3 {
   color: #364146;
@@ -1026,6 +1046,12 @@ section {
    
 
   }
+  #cta2 {
+    background-image: url("../img/fondoresponsive.png");
+    background-size: cover;
+  
+  }
+
 
 }
 
@@ -1165,9 +1191,9 @@ margin-bottom: 0px;}
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: url("../img/team-bg.jpg") center center no-repeat;
+  /*background: url("../img/team-bg.jpg") center center no-repeat;*/
   background-size: cover;
-  padding: 60px 0;
+  padding: 60px 0 0;
   position: relative;
 }
 
@@ -1180,7 +1206,7 @@ margin-bottom: 0px;}
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.75);
+ /* background: rgba(255, 255, 255, 0.75);*/
   z-index: 9;
 }
 
@@ -1197,14 +1223,18 @@ margin-bottom: 0px;}
 
 .team .member .pic {
   overflow: hidden;
+ 
+  
 }
 
+.team .member .elementos { max-width: 75%;}
+
 .team .member .member-info {
-  position: absolute;
-  top: 85%;
+  /*position: absolute;
+  top: 85%;*/
   left: 30px;
   right: 30px;
-  background: #CCDBF5;
+  /*background: #CCDBF5;*/
   padding: 15px 0;
   color: #332F3D;
   /*box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);*/
@@ -1220,14 +1250,62 @@ margin-bottom: 0px;}
 
 .team .member h4 {
   font-weight: 700;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
   font-size: 16px;
   color: #364146;
   position: relative;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 
-.team .member h4::after {
+#team2 .member {
+  position: relative;
+  /*box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);*/
+  padding: 30px 30px 30px 0px;
+  border-radius: 15px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+#team2 .member p {
+  font-style: italic;
+  text-align: left;
+    margin:0px 0px 10px;
+    padding: 10px 0px 0px;
+    background: rgb(252, 252, 252);
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+#nombre h3{
+  font-size: 14px;
+  font-weight: bold;
+  color: #3F3F3F;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#nombre h5{
+  font-size: 14px;
+  font-weight: normal;
+  color: #3F3F3F;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+
+
+
+
+.team .member .quote-icon-left {
+  color: #BFC7DA;
+  font-size: 26px;
+
+}
+
+
+/*.team .member h4::after {
   content: '';
   position: absolute;
   display: block;
@@ -1236,7 +1314,7 @@ margin-bottom: 0px;}
   background: #364146;
   bottom: 0;
   left: calc(50% - 25px);
-}
+}*/
 
 .team .member span {
   font-style: italic;
@@ -1262,11 +1340,38 @@ margin-bottom: 0px;}
   margin: 0 2px;
 }
 
+#team2 {
+  background-color:#FFD6D6;
+  background-image: url("../img/textura.png");
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  background-size: cover;
+ 
+  background-position: center;
+ 
+}
+
+
+
+
 @media (max-width: 992px) {
   .team .member {
     margin-bottom: 110px;
   }
+
+  #team2 .member {
+    position: relative;
+    /*box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);*/
+    padding: 30px 20px 30px 10px;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+  }
+
+  #team2 img {align-items: center;} 
 }
+
+
 
 /*--------------------------------------------------------------
 # Clients
@@ -1320,12 +1425,14 @@ margin-bottom: 0px;}
 .pricing h2 {
   font-weight: 400;
   font-family: "Passion One", sans-serif;
-  font-size: 28px;
+  font-size: 36px;
   color: #5A526F;
   margin-bottom: 8px;
 }
 
-.pricing p{ color: #5A526F;}
+.pricing p{ 
+  font-size: 18px;
+  color: #5A526F;}
 
 /*.pricing h3 {
   font-weight: 400;
@@ -1441,10 +1548,20 @@ margin-bottom: 0px;}
   
 }
 
-.pricing {background: #FFD6D6;}
+.pricing {background: #FFD6D6;
+  background-image: url("../img/textura.png");
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  background-size: cover;
+ 
+  background-position: center;}
 
 
-
+  @media (max-width: 992px) {
+  .pricing h2 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }}
 
 
 /*--------------------------------------------------------------
@@ -1660,7 +1777,8 @@ margin-bottom: 0px;}
   padding-bottom: 0px;}
 
   .contact .section-title p {
-    margin-right: 20px;}
+    margin-right: 20px;
+  font-size: 18px;}
 
 .contactoima {justify-self: center;
   align-self: center;
@@ -1799,6 +1917,8 @@ margin-bottom: 0px;}
     position: static;
     margin-top: 30px;
   }
+
+
 }
 
 /*--------------------------------------------------------------
