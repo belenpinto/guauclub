@@ -1217,7 +1217,7 @@ margin-bottom: 0px;}
 # Team
 --------------------------------------------------------------*/
 .team {
-  /*background: url("../img/team-bg.jpg") center center no-repeat;*/
+ 
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -1309,7 +1309,7 @@ margin-bottom: 0px;}
   text-align: left;
     margin:0px 0px 10px;
     padding: 10px 0px 0px;
-    background: rgb(252, 252, 252);
+    
     border-radius: 6px;
     position: relative;
     z-index: 1;
@@ -1389,6 +1389,7 @@ margin-bottom: 0px;}
   background-position: center;
  
 }
+
 
 .team2 .comenta p{ font-size: 18px;
 }
