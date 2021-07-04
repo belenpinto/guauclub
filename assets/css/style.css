@@ -115,6 +115,8 @@ h3 { font-weight: 700;
     font-size: 28px;
     padding: 1px 0;
   }
+
+  .inventada { text-align: center;}
 }
 
 /*--------------------------------------------------------------
@@ -376,7 +378,7 @@ h3 { font-weight: 700;
   width: 100%;
   /*background-image: url("../img/herofinal.png");*/
  background-color: #ffffff;
-  background-image: url("../img/fondodetalle2.png");
+  /*background-image: url("../img/fondodetalle2.png");*/
   background-repeat: no-repeat;
   /*background-size: contain;*/
   background-size: cover;
@@ -521,13 +523,29 @@ h3 { font-weight: 700;
     font-size: 48px; }
 
   #hero h1 {
-    font-size: 38px;
-    line-height: 36px;
+    font-size: 45px;
+    line-height: 40px;
+    padding: 0px 50px 0px 50px;
     margin-bottom: 5px;
   }
   #hero h2 {
     font-size: 18px;
+    padding: 10px 40px 0px 40px;
   }
+}
+
+@media (max-width: 380px) {
+  #hero h1 {
+    font-size: 36px;
+    line-height: 39px;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 5px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -570,7 +588,7 @@ section {
 
 .about .container {
   background-color: #ffffff; /*#f7f8f9*/
-  padding: 60px 50px;
+  padding: 0px 0px 100px 0px;
 }
 
 /*boton*/
@@ -593,7 +611,7 @@ section {
 
 @media (max-width: 992px) {
   .about .container {text-align: center;
-    padding: 30px;
+    padding: 0px 30px 80px 30px;
   }
 }
 
@@ -608,8 +626,8 @@ section {
 }
 
 .opciones .content h3 {
-  font-weight: 700;
-  font-size: 35px; /*32px era el tamaño*/
+  font-weight: 600;
+  font-size: 36px; /*32px era el tamaño*/
   letter-spacing: 1px;
   color: #69617E;
   font-family: "Passion One", sans-serif;
@@ -838,6 +856,8 @@ section {
   margin-bottom: 30px;
 }
 
+
+
 .portfolio .section-title p {
   font-size: 18px;
   margin-left: 180px;
@@ -930,7 +950,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #A5468C;
+  color:  #7e9cd4;
   margin: 0 2px;
   font-size: 60px;
   display: inline-block;
@@ -942,7 +962,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #fff;
+  color: #97b0df;
   /*background: #009cea;*/
 
 }
@@ -963,14 +983,21 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: calc(50% - 50px);
+
 }
+#portfolio .section-title { padding-top:  50px !important; ;}
+
+#portfolio .portfolio-container {padding-bottom: 50px;}
+
 @media (max-width: 992px) {
 .portfolio .section-title p {
   font-size: 18px;
   margin-left: 0px;
   margin-right: 0px;
+
 } 
 
+#portfolio .section-title { padding-top:  50px !important ;}
 
 
 }
@@ -1009,7 +1036,7 @@ section {
 }
 
 .cta .quote-icon-left {
-  color: #C3CBDA;
+  color:  #97b0df91;
   font-size: 66px;
 
 }
@@ -1061,6 +1088,8 @@ section {
     align-items: center;
     justify-content: flex-end;
   }
+
+  
 }
 
 /*--------------------------------------------------------------
@@ -1072,12 +1101,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid #fff;
+  width: 100%;
+  text-align: center!important;
 }
 
 
@@ -1145,7 +1170,7 @@ section {
   z-index: 1;
 }
 
-#testimonials { background-color: #FFD6D6;}
+
 
 
 
@@ -1183,7 +1208,8 @@ margin-bottom: 0px;}
 
 @media (max-width: 767px) {
   .testimonials {
-    margin: 30px 0px;
+    margin: 0px 0px;
+    padding: 0px 0px 70px;
   }
 }
 
@@ -1193,22 +1219,27 @@ margin-bottom: 0px;}
 .team {
   /*background: url("../img/team-bg.jpg") center center no-repeat;*/
   background-size: cover;
-  padding: 60px 0 0;
+  padding: 60px 0;
   position: relative;
 }
 
+
+
+
 .team p{font-size: 14px;}
 
-.team::before {
+
+/*esto lo oculte para poder tocar los botnes del slide*/
+/*.team::before {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
- /* background: rgba(255, 255, 255, 0.75);*/
+  background: rgba(255, 255, 255, 0.75);
   z-index: 9;
-}
+} */
 
 .team .container {
   position: relative;
@@ -1223,22 +1254,20 @@ margin-bottom: 0px;}
 
 .team .member .pic {
   overflow: hidden;
- 
-  
 }
 
-.team .member .elementos { max-width: 75%;}
+
 
 .team .member .member-info {
   /*position: absolute;
   top: 85%;*/
   left: 30px;
   right: 30px;
-  /*background: #CCDBF5;*/
+  background: #ffffff;
   padding: 15px 0;
   color: #332F3D;
   /*box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);*/
-  border-radius: 6px;
+  border-radius: 15px;
   /*max-height: 95px;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;*/
@@ -1257,16 +1286,25 @@ margin-bottom: 0px;}
   /*padding-bottom: 10px;*/
 }
 
-#team2 .member {
+.team2 .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #364146;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team2 .member {
   position: relative;
   /*box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);*/
-  padding: 30px 30px 30px 0px;
-  border-radius: 15px;
+  padding: 30px 18px 30px 10px;
+  border-radius: 5px;
   background: #fff;
   transition: 0.5s;
 }
 
-#team2 .member p {
+.team2 .member-info p {
   font-style: italic;
   text-align: left;
     margin:0px 0px 10px;
@@ -1275,9 +1313,10 @@ margin-bottom: 0px;}
     border-radius: 6px;
     position: relative;
     z-index: 1;
+    font-size: 14px;
 }
 
-#nombre h3{
+.team2 .member h3{
   font-size: 14px;
   font-weight: bold;
   color: #3F3F3F;
@@ -1286,7 +1325,7 @@ margin-bottom: 0px;}
   margin-bottom: 0px;
 }
 
-#nombre h5{
+.team2 .member-info h5{
   font-size: 14px;
   font-weight: normal;
   color: #3F3F3F;
@@ -1298,8 +1337,8 @@ margin-bottom: 0px;}
 
 
 
-.team .member .quote-icon-left {
-  color: #BFC7DA;
+.team2 .member .quote-icon-left {
+  color: #97b0df91;
   font-size: 26px;
 
 }
@@ -1340,18 +1379,19 @@ margin-bottom: 0px;}
   margin: 0 2px;
 }
 
-#team2 {
+.team2 {
   background-color:#FFD6D6;
   background-image: url("../img/textura.png");
   background-repeat: no-repeat;
   /*background-size: contain;*/
   background-size: cover;
- 
+  
   background-position: center;
  
 }
 
-
+.team2 .comenta p{ font-size: 18px;
+}
 
 
 @media (max-width: 992px) {
@@ -1359,19 +1399,151 @@ margin-bottom: 0px;}
     margin-bottom: 110px;
   }
 
-  #team2 .member {
+  .team2 .member {
     position: relative;
     /*box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);*/
-    padding: 30px 20px 30px 10px;
+    padding: 30px;
     border-radius: 5px;
     background: #fff;
     transition: 0.5s;
   }
 
   #team2 img {align-items: center;} 
+
+  .team2 .member h3{
+    font-size: 18px;
+    padding: 10px 0px 0px 0px;
+    
+  }
+
+  .team2 .comenta p{ font-size: 18px;
+  }
+
+  .team2 .section-title .comenta {padding-bottom: 0px!important;}
+
+  .team p{font-size: 16px;}
+
+  .team .member h4 {
+    font-size: 20px;
+  }
 }
 
 
+/*--------------------------------------------------------------
+# PRUEBAcopie
+--------------------------------------------------------------*/
+
+.disflex {
+  display: flex!important;
+}
+.inlineb {
+  display: inline-block!important;
+}
+
+.carousel-item {
+  justify-content: center!important;
+  /*text-align: center!important;*/
+  margin: auto!important;
+}
+.owl-carousel{
+  justify-content: center!important;
+  text-align: center!important;
+  margin: auto!important;
+
+
+}
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center!important;
+}
+.carrumarg {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+
+.section-title2.mobile {
+  padding-top: 25px;
+  padding-bottom: 18px;
+}
+
+.perroform.mobile img {
+  margin-top: 33px;
+  width: 100%;
+  margin-bottom: -17px;
+}
+
+
+.form-group{
+  font-size: 15px;
+}
+
+.section-bg.white {
+  background-color: white!important;
+}
+
+
+/*------Prueba copie------------------------------------*/
+
+.section-title1.comentariotit {
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 7px;
+}
+.owl-carousel .owl-stage-outer {
+  padding-bottom: 26px;
+}
+
+
+/*--------- Miembros ----------*/
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  margin: auto;
+  border-radius: 10px!important;
+}
+.team .member .pic .img-fluid{
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px!important;
+}
+.comentmiembros {
+  border-radius: 15px!important;
+}
+
+ /*--------------------- Miembros (Iphone version) ----------*/
+
+ @media (max-width: 480px) {
+  .comentmiembros {
+      display: flex!important;
+      flex-wrap: wrap;
+  }
+  .team .member .pic .img-fluid{
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px!important;
+  }
+  .team .member .pic {
+  overflow: hidden;
+  width: 100%!important;
+  border-radius: 10px!important;
+  }
+
+  .team2 .member-info p {
+    font-style: italic;
+    text-align: left;
+      margin:0px 0px 10px;
+      padding: 10px 0px 0px;
+      background: rgb(252, 252, 252);
+      border-radius: 6px;
+      position: relative;
+      z-index: 1;
+      font-size: 16px;
+  }
+
+
+}
 
 /*--------------------------------------------------------------
 # Clients
@@ -1432,7 +1604,7 @@ margin-bottom: 0px;}
 
 .pricing p{ 
   font-size: 18px;
-  color: #5A526F;}
+  }
 
 /*.pricing h3 {
   font-weight: 400;
@@ -1862,11 +2034,11 @@ margin-bottom: 0px;}
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #009cea !important;
+  background-color: #69617E !important;
 }
 
 .portfolio-details .portfolio-info {
